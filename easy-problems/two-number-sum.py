@@ -18,5 +18,21 @@ def two_number_sum_with_ht(input, target):
     return result
 
 
-result = two_number_sum_with_ht(input=[3, 5, -4, 8, 11, 1, -1, 6], target=10)
+def two_number_sum_with_ptrs(input, target):
+    input.sort()
+    left_ptr, right_ptr = 0, len(input) - 1
+
+    while left_ptr != right_ptr:
+        tg = input[left_ptr] + input[right_ptr]
+
+        if target == tg:
+            return [input[left_ptr], input[right_ptr]]
+        elif target > tg:
+            left_ptr += 1
+        elif target < tg:
+            right_ptr += 1
+
+
+# result = two_number_sum_with_ht(input=[3, 5, -4, 8, 11, 1, -1, 6], target=10)
+result = two_number_sum_with_ptrs(input=[3, 5, -4, 8, 11, 1, -1, 6], target=10)
 print(result)
