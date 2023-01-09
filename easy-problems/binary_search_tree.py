@@ -6,6 +6,9 @@
 # Every Node in a tree is subtree
 
 class BinarySearchTree:
+    """
+    Binary Search Tree
+    """
 
     def __init__(self,val:int) -> None:
         self.val = val
