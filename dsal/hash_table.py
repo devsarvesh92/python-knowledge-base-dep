@@ -59,5 +59,3 @@ d = HashTable()
 d['name']='sarvesh'
 d['age']='20'
 print(d['age'])
-
-
