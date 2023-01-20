@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Any
 
 
-
 class AudioExporter(ABC):
     """
     Abstract class for Audio Exporter
@@ -91,6 +90,4 @@ if __name__ == '__main__':
     while True:
         user_input = input("Select choice of audio exporter: ")
         exporters[user_input.strip()].get_audio_exporter().export(Path('/tmp/loc/aud.wav'))
-
-
 
