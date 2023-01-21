@@ -1,0 +1,15 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "sarvesh.sawant", email = "sarveshdev92@gmail.com"},
+]
+dependencies = [
+    "bs4>=0.0.1",
+    "lxml>=4.9.2",
+]
+requires-python = ">=3.11"
+license = {text = "MIT"}

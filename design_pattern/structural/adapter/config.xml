@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <path>tmp/exp</path>
+  <log>tmp/log.txt</log>
+  <space>100</space>
+</root>
