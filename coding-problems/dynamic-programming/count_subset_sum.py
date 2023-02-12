@@ -1,4 +1,18 @@
-
+##############################################################
+# Pseudo code
+# 1,2,1
+# 
+# include num or don't include
+# dest =3
+# 
+# 1 -> sum = 2 -> 2 -> sum =0 -> 1 path
+# 1 -> sum = 2 -> X -> sum = 2 -> 1 -> sum =1 -> not a path
+# 1 -> sum = 2 -> X -> sum = 2 -> 1->X -> sum = 1 -> not a path
+# 
+# X -> sum = 3 -> 2 -> sum =1 -> 1 ->sum = 0 -> 2nd path
+# X -> sum = 3 -> X -> sum=3 -> 1 -> sum = 2 -> not a path
+# X -> sum = 3 -> X -> sum=3-> X -> sum = 3 -> not a path
+##############################################################
 
 def count_subset_sum(nums:list[int],sum:int,index:int,count:int):
     """
