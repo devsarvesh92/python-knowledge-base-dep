@@ -19,15 +19,6 @@ class Order:
     def total_prize(self):
         return sum([item['quantity']*item['price'] for item in self.items])
 
-    def pay(self,payment_type:str):
-        match payment_type:
-
-            case 'credit':
-                print(f'paying {self.total_prize()} by credit card')
-
-            case 'debit':
-                print(f'paying {self.total_prize()} by debit card')
-
 
 class AuthProcessor(ABC):
 
