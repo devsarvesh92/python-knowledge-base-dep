@@ -11,7 +11,7 @@ class Queue:
     def enque(self,val):
         self.col.appendleft(val)
     
-    def pop(self):
+    def deque(self):
         self.col.pop()
 
     def __len__(self):
@@ -29,6 +29,6 @@ q.enque(10)
 q.enque(11)
 q.enque(12)
 print(q)
-q.pop()
+q.deque()
 
 print(q)
